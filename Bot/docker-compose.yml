@@ -1,0 +1,10 @@
+services:
+    aibot:
+        build: .
+        restart: "unless-stopped"
+        volumes: 
+            - /home/bots/shared/:/app/shared/:ro
+            - ./:/app/bot/
+        environment:
+            - PYTHONUNBUFFERED=1
+        command: bash -c "cd /app/bot/ && python3 -m bot.py"
