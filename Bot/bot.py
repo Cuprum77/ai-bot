@@ -93,8 +93,7 @@ print('-' * 40)
 content = f'Loading the GPT2 Model...'
 print('|', content, ' ' * (35 - len(content)), '|')
 globals.tokenizer = GPT2Tokenizer.from_pretrained(os.path.join(globals.shared_dir, 'DialoGPT-medium'))
-globals.model = AutoModelForCausalLM.from_pretrained(os.path.join(globals.shared_dir, 'DialoGPT-medium'))
-#globals.model = AutoModelForCausalLM.from_pretrained(f'GPT2-{globals.bot_name}')
+globals.model = AutoModelForCausalLM.from_pretrained(f'GPT2-{globals.bot_name}')
 content = f'GPT2 model successfully loaded'
 print('|', content, ' ' * (35 - len(content)), '|')
 
