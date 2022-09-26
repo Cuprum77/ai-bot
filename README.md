@@ -1,4 +1,6 @@
 # discord shitposting bot
 uses GPT to shitpost on discord
 
-does not contain all files necessary to run it, its merely here to satisfy peoples curiosity
+to set it up for yourself
+add https://huggingface.co/microsoft/DialoGPT-medium to the Shared folder
+add your own model with the name "GPT-[bot name]" to the Bot folder
