@@ -82,7 +82,7 @@ class gpt(commands.Cog):
             if bot_input_ids.shape[1] > 200:
                 globals.last_message = None
                 globals.shape_info = []
-                _talk = True
+                globals.talk = True
                 return
 
             # generated a response while limiting the total chat history to 1000 tokens,
